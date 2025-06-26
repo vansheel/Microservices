@@ -1,3 +1,3 @@
-module github.com/vansheel/microservices
+module github.com/vansheel/Microservices
 
 go 1.23.4
