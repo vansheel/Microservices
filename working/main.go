@@ -26,6 +26,15 @@ func main() {
 	sm.Handle("/", hh)
 	sm.Handle("/goodbye", gh)
 
+
+	//create a product handler 
+	// create the handlers
+	ph := handlers.NewProducts(l)
+
+	// create a new serve mux and register the handlers
+	sm.Handle("/product", ph)
+
+	
 	// create a new server
 	s := http.Server{
 		Addr :		  ":9090",
